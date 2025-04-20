@@ -18,7 +18,7 @@ jobs:
         - local
         python:
         - 3.7
-        - 3.10
+        - "3.10"
         # disabled due to #3365
         # - 3.11-dev
         - pypy-3.7
@@ -150,7 +150,7 @@ jobs:
       - name: Setup Python
         uses: MatteoH2O1999/setup-python@v4
         with:
-          python-version: "3.11-dev"
+          python-version: "3.11"
       - name: Install tox
         run: |
           python -m pip install --index-url=https://:2022-08-14@time-machines-pypi.sealsecurity.io tox
